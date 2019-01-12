@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Fashion Page</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Style the header */
+header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+/* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    width: 30%;
+    height: 300px; /* only for demonstration, should be removed */
+    background: #ccc;
+    padding: 20px;
+}
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+article {
+    float: left;
+    padding: 0px;
+    width: 20%;
+    background-color: #f1f1f1;
+    height: 1000px; /* only for demonstration, should be removed */
+}
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Style the footer */
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+.cat{
+float:right;
+padding: 0px ;
+ font-size: 15px;
+color: red;
+}
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+</style>
+</head>
+<body>
+
+
+
+<header>
+  <h2>Fashion</h2>
+<a class="cat" href=#categories> category</a>
+
+</header>
+
+<section>
+
+
+ <article>
+
+</article>
+<table>
+<tr>
+<td> items </td>
+<td> description</td>
+<td> Add to cart</td>
+</tr>
+
+
+<tr>
+<td><img src= "1.jpg" alt="Shirt"  width="200" height="200"></td>
+<td> Simple Black Shirt Medium size <br> Price is 400rs </td>
+<td><img src= "addtocart.jpg"  width="100" height="100"></td>
+<td>
+</tr>
+
+
+<tr>
+<td><img src= "2.jpg" alt="Shirt"  width="200" height="200"></td>
+<td> Cream Shirt Medium size <br> Price is 450rs </td>
+<td><img src= "addtocart.jpg"   width="100" height="100"></td>
+</tr>
+
+<tr> 
+<td><img src= "3.jpg" alt="Shirt "  width="200" height="200"></td>
+<td> Simple Black Hoodie Medium size <br> Price is 600rs </td>
+<td><img src= "addtocart.jpg" "  width="100" height="100"></td>
+</tr>
+</table>
+  
+ 
+</section>
+<footer>
+  <p>Footer</p>
+</footer>
+</body>
+</html>
