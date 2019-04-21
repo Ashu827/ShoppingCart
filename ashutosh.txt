@@ -1,0 +1,653 @@
+<!--bottom-->
+    <div class="end"  style="">
+        <!--button-->
+        <input (click)="openModal()"  class="sub4"  id="myBtn"  type="submit"  value="Submit">
+            <div class="tac"  style="">
+                <p class="tandc"  style="">Terms and Conditions</p>
+                    <img style=""  src="../assets/images/pdf.png">
+                        </div>
+                        </div>
+
+
+                        <!--modal starts-->
+                        <!-- Trigger/Open The Modal -->
+                        <ng-template #modal ng-app="myApp"  ng-controller="aboutController as about"  let-c="close"  let-d="dismiss">
+                            <div class="modal-whole"  >
+                                <div class="modal-body"  >
+                                    <ng-container >
+                                        <button type="button"  style="border:none !important;"  class="close"  aria-label="Close"  (click)="d('Cross click')">
+                                            <span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <img class="modalimg"  style=""  src="assets/images/cornerPiece.png">
+                                                    <p class="modalprom"  style="">Promotion Saved</p>
+                                                        <p class="modalp"  style="">Promotion name</p>
+                                                            <h4 class="headingprom"  style="">December Promotion E</h4>
+                                                                <p class="hash"  style="">Hash Code</p>
+                                                                    <h4 class="code"  style="">[B@283417fa</h4>
+                                                                        <a id="modalbtn" href="associate-promo"  type="button"  (click)="d('Cross click')"  style=""  class="btn btn-primary">OK</a>
+                                                                            </ng-container>
+                                                                            </div>
+                                                                            </div>
+                                                                            </ng-template>
+
+
+
+
+
+
+
+
+css
+
+.left {
+    width: 80px;
+    height: 100%;
+    background-color: #e9e9e9;
+    box-shadow: -1px 1px 5px 5px rgba(0, 0, 0, 0.84);
+    white-space: nowrap;
+    transition: width 0.5s;
+    position: fixed;
+    z-index: 9999;
+}
+
+.left ul {
+    padding: 0;
+    list-style-type: none;
+    text-align: left;
+}
+
+.left li {
+    width: auto;
+    height: 60px;
+    line-height: 50px;
+    padding-left: 16px;
+}
+
+.left li:hover {
+    background: #bec2c4;
+}
+
+.left:hover {
+    width: 177px;
+    box-shadow: -1px 1px 5px 5px rgba(0, 0, 0, 0.84);
+}
+
+.left .item-menu {
+    height: 60px;
+    overflow: hidden;
+}
+
+.left .item-menu.layer:hover {
+    background-color: #e9e9e9;
+}
+
+.left .item-menu.layer {
+    height: 98px;
+    margin-top: -15px;
+    background-color: #12abdb;
+    overflow: hidden;
+}
+
+.left a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+span.menu {
+    padding-left: 6px;
+}
+
+
+/* promotion associate css*/
+
+body {
+    text-align: center;
+    background-color: #ffffff;
+    font-family: 'Ubuntu', sans-serif !important;
+    margin: -6px;
+}
+
+h1 {
+    color: #ffffff;
+    display: inline;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h4.decpromotion {
+    text-transform: uppercase;
+    color: #a0a0a0;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline;
+    margin: 30px 5px;
+}
+
+h2.promreview {
+    text-transform: uppercase;
+    color: #0070ad;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 30px 5px;
+    display: inline;
+}
+
+.promhead {
+    width: 100%;
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 6px;
+    height: 88px;
+    overflow: hidden;
+    background-color: #333333f2;
+    font-weight: bold;
+}
+
+img.headshot {
+    float: right;
+    width: 24px;
+    height: 24px;
+    margin: 14px;
+}
+
+.container-fluid {
+    width: 80%;
+    float: right;
+    margin-top: 32px;
+    margin-right: 40px;
+    text-align: left;
+    padding-left: 12px;
+    border: 1px solid transparent;
+    box-shadow: -2px 5px 10px 1px #12abdb;
+}
+
+.tp {
+    text-align: center;
+    width: 85%;
+    float: right;
+    margin-top: 22px;
+}
+
+img.headshot1 {
+    float: right;
+    width: 5%;
+    margin: 14px;
+}
+
+.back {
+    float: right;
+    display: inline;
+    font-size: 13px;
+    font-weight: bold;
+    color: #0070ad;
+    margin: 7px;
+    text-decoration: none;
+}
+
+img.logo {
+    margin-right: 10px;
+    margin-left: 170px;
+    display: inline;
+    width: 95px;
+    height: 55px;
+    border: 0;
+    float: left;
+}
+
+.end {
+    width: 100%;
+    display: inline-block;
+    margin: 25px 0px;
+    float: left;
+}
+
+.tandc {
+    color: #12abdb;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    float: left;
+}
+
+.tac {
+    display: inline-block;
+}
+
+.sub4 {
+    width: 15%;
+    font-family: 'Ubuntu', sans-serif !important;
+    background-color: #12abdb;
+    color: white;
+    font-size: 14px;
+    float: right;
+    margin-right: 40px;
+    margin-bottom: 15px;
+    padding: 6px 14px;
+    /* margin: 40px 150px 15px 0px; */
+    border: none;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+    .logo {
+        margin-left: 210px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:992px) {
+    .container-fluid {
+        width: 72%;
+        margin-right: 30px;
+        padding-left: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:992px) {
+    h4.decpromotion {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:992px) {
+    .back {
+        font-size: 11px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:992px) {
+    h2.promreview {
+        font-size: 19px;
+    }
+}
+
+h4 {
+    font-size: 18px;
+    color: #606060;
+}
+
+.menu {
+    color: #808080;
+    font-size: 16px;
+    padding: 0 !important;
+}
+
+.explore {
+    color: #ffffff;
+    font-weight: bold;
+    padding: 7px 60px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    background-color: #12abdb;
+    width: 98px;
+    height: 35px;
+    font-size: 14px;
+    border-radius: 3px;
+    border: none;
+}
+
+.prom {
+    display: inline-block;
+    width: 40%;
+    margin: 0px 2px;
+    font-family: 'Ubuntu', sans-serif !important;
+}
+
+.descr {
+    display: inline-block;
+    width: 40%;
+    margin: 0px 2px;
+    font-family: 'Ubuntu', sans-serif !important;
+}
+
+.lbl {
+    color: #a0a0a0;
+    font-size: 14px;
+}
+
+textarea.txt {
+    padding-top: 10px;
+    border-radius: 0px;
+    border: 1px solid #0070ad;
+    background-color: #fafafa;
+    font-size: 14px;
+    color: #808080;
+}
+
+.bus {
+    display: inline-block;
+    width: 40%;
+    margin: 0px 2px;
+    font-family: 'Ubuntu', sans-serif !important;
+}
+
+.custm {
+    display: inline-block;
+    width: 40%;
+    margin: 0px 2px;
+    font-family: 'Ubuntu', sans-serif !important;
+}
+
+.ruletype {
+    display: inline-block;
+    width: 50%;
+    font-family: 'Ubuntu', sans-serif !important;
+}
+
+.speci {
+    display: inline-block;
+    width: 40%;
+    font-family: 'Ubuntu', sans-serif !important;
+}
+
+select.sele {
+    border-radius: 0px;
+    width: 65%;
+    border: 1px solid #0070ad;
+    padding: 7px 0px;
+    background-color: #fafafa;
+    font-size: 14px;
+    color: #808080;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.daterang {
+    display: inline-block;
+    width: 20%;
+    margin-bottom: 10px;
+    font-family: 'Ubuntu', sans-serif !important;
+}
+
+.enrol {
+    display: inline;
+    width: 35%;
+    float: right;
+    font-family: 'Ubuntu', sans-serif !important;
+}
+
+textarea.txt1 {
+    display: inline-block;
+    width: 50%;
+    padding-top: 10px;
+    border-radius: 0px;
+    border: 1px solid #0070ad;
+    background-color: #fafafa;
+    font-size: 14px;
+    color: #808080;
+}
+
+textarea.txt2 {
+    padding-top: 10px;
+    border-radius: 0px;
+    border: 1px solid #0070ad;
+    background-color: #fafafa;
+    font-size: 14px;
+    color: #808080;
+}
+
+.enroldays {
+    display: inline;
+    width: 45%;
+    float: right;
+    font-family: 'Ubuntu', sans-serif !important;
+}
+
+select.sele1 {
+    border-radius: 0px;
+    border: 1px solid #0070ad;
+    padding: 7px 0px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    background-color: #fafafa;
+    font-size: 14px;
+    color: #808080;
+    width: 70%;
+}
+
+#promotion {
+    width: 92%;
+}
+
+#description {
+    width: 92%;
+}
+
+#business {
+    width: 92%;
+}
+
+#customer {
+    width: 92%;
+}
+
+#range {
+    width: 85%;
+}
+
+#deadline {
+    width: 92%;
+}
+
+
+/*promotion director css ends */
+
+
+/* modal css*/
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 15px;
+    border: 1px solid #888;
+    width: 40%;
+}
+
+
+/* The Close Button */
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.alrtbox {
+    width: 100%;
+}
+
+.modalimg {
+    width: 55%;
+    float: right;
+}
+
+p.modalprom {
+    font-size: 30px;
+    font-weight: bold;
+    color: #0070ad;
+}
+
+p.modalp {
+    font-weight: bold;
+}
+
+h4.headingprom {
+    font-weight: bold;
+}
+
+p.hash {
+    font-weight: bold;
+}
+
+h4.code {
+    font-weight: bold;
+}
+
+#modalbtn {
+    margin: 65px;
+    width: 50%;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #12abdb;
+    color: white;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* modal css ends*/
+
+
+
+
+
+
+
+
+
+
+
+component.ts
+
+
+import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
+import {
+  NgbModal,
+  ModalDismissReasons,
+  NgbModalRef,
+  NgbModule
+  } from '@ng-bootstrap/ng-bootstrap'; 
+import { Router } from '@angular/router';
+@Component({
+  selector: 'app-associate-drilldown',
+  templateUrl: './associate-drilldown.component.html',
+  styleUrls: ['./associate-drilldown.component.css']
+})
+export class AssociateDrilldownComponent implements OnInit {
+
+  constructor(private modalService: NgbModal, private route: Router) { }
+
+  @ViewChild('modal') public modalRef: ElementRef;
+  public model: NgbModalRef;
+  title = 'childdirectr';
+  
+  public modal = document.getElementById('myModal');
+  
+  // Get the button that opens the modal
+  public btn = document.getElementById('myBtn');
+  
+  // Get the <span> element that closes the modal
+  public span = document.getElementsByClassName('close')[0];
+  
+  // When the user clicks the button, open the modal
+  public openModal() {
+  this.model = this.modalService.open(this.modalRef);
+  }
+  
+  off(){
+  this.route.navigateByUrl("associate-promo");
+  } 
+
+  ngOnInit() {
+  }
+
+}
+
+
+
+app.module.ts
+
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { MarketingAssociateComponent } from './marketing-associate/marketing-associate.component';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { CarouselCompComponent } from './carousel-comp/carousel-comp.component';
+import { CarouselModule } from 'ngx-bootstrap';
+import { ThreesecComponent } from './threesec/threesec.component';
+import { LoginPageComponent } from './login-page/login-page.component';
+import { FormsModule } from '@angular/forms';
+import { PromotionComponent } from './promotion/promotion.component';
+import { ReviewPageComponent } from './review-page/review-page.component';
+import { AssociatePromoComponent } from './associate-promo/associate-promo.component';
+import { AssociateDrilldownComponent } from './associate-drilldown/associate-drilldown.component';
+import { CustomerPageComponent } from './customer-page/customer-page.component';
+import { DirectorStatusComponent } from './director-status/director-status.component';
+import { NgbModal, NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+import { from } from 'rxjs';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { PromotionPreviewComponent } from './promotion-preview/promotion-preview.component';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    CarouselCompComponent,
+    ThreesecComponent,
+    LoginPageComponent,
+    MarketingAssociateComponent,
+    PromotionComponent,
+    ReviewPageComponent,
+    AssociateDrilldownComponent,
+    AssociatePromoComponent,
+    CustomerPageComponent,
+    DirectorStatusComponent,
+    PromotionPreviewComponent,
+    
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    CarouselModule,
+    FormsModule,
+    NgbModule,
+    HttpClientModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+
+
